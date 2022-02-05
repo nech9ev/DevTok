@@ -1,13 +1,12 @@
 package com.nech9ev.domain
 
+import com.nech9ev.core.GifCategory
+import com.nech9ev.domain.model.Gif
+
 interface GifRepository {
 
-    suspend fun getHot()
+    suspend fun getNext(category: GifCategory): Gif
 
-    suspend fun getTop()
-
-    suspend fun getLatest()
-
-    suspend fun getRandom()
+    suspend fun getPrev(category: GifCategory): Gif
 
 }

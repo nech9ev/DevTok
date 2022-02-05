@@ -2,6 +2,7 @@ rootProject.name = "Tinkoff Test App"
 
 include(
     ":app",
-    ":core",
-    ":domain"
+    ":domain",
+    ":data",
+    ":core"
 )
