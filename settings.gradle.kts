@@ -1,5 +1,6 @@
 rootProject.name = "Tinkoff Test App"
 
 include(
-    ":app"
+    ":app",
+    ":core"
 )
