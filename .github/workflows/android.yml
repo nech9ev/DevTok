@@ -23,13 +23,17 @@ jobs:
         run: |
             ./gradlew detekt
 
-      - name: Core unit testing
+      - name: Unit testing
         run: |
-            ./gradlew :core:testDebugUnitTest
+            ./gradlew testDebugUnitTest
 
       - name: Build debug .apk
         run: |
             ./gradlew assembleDebug
+
+      - name: Instrumentation testing
+        run: |
+            ./gradlew :data:connectedAndroidTest
 
       - name: Upload APK
         uses: actions/upload-artifact@v2
