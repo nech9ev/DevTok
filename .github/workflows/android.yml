@@ -31,10 +31,6 @@ jobs:
         run: |
             ./gradlew assembleDebug
 
-      - name: Instrumentation testing
-        run: |
-            ./gradlew :data:connectedAndroidTest
-
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
