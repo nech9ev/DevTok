@@ -19,9 +19,13 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: detekt
+      - name: Detekt
         run: |
             ./gradlew detekt
+
+      - name: Core unit testing
+        run: |
+            ./gradlew :core:testDebugUnitTest
 
       - name: Build debug .apk
         run: |
