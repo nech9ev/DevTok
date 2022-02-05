@@ -1,4 +1,4 @@
-package com.nech9ev.data
+package com.nech9ev.data.api
 
 import com.nech9ev.core.GifCategory
 

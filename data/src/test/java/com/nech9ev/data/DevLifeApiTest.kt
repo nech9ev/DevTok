@@ -1,6 +1,8 @@
 package com.nech9ev.data
 
 import com.nech9ev.core.GifCategory
+import com.nech9ev.data.api.DevLifeApiRouter
+import com.nech9ev.data.api.GifApiRouter
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test

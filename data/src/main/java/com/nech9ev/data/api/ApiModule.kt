@@ -1,4 +1,4 @@
-package com.nech9ev.data
+package com.nech9ev.data.api
 
 import dagger.Module
 import dagger.Provides
@@ -12,7 +12,7 @@ object ApiModule {
 
     @Provides
     @Reusable
-    fun provideGifApiConfig(): GifApiRouter{
+    fun provideGifApiConfig(): GifApiRouter {
         return DevLifeApiRouter()
     }
 
