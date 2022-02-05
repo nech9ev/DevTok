@@ -1,4 +1,4 @@
-package com.nech9ev.data.datasource
+package com.nech9ev.data
 
 import dagger.Module
 import dagger.Provides

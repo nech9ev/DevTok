@@ -1,6 +1,6 @@
-package com.nech9ev.data
+package com.nech9ev.data.api
 
-object TestConstants {
+internal object TestApiConstants {
     const val page = 0
 
     const val devLifeHotUrl = "https://developerslife.ru/hot/$page?json=true"

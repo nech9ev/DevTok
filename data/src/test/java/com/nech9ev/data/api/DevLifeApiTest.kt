@@ -1,8 +1,6 @@
-package com.nech9ev.data
+package com.nech9ev.data.api
 
 import com.nech9ev.core.GifCategory
-import com.nech9ev.data.api.DevLifeApiRouter
-import com.nech9ev.data.api.GifApiRouter
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
@@ -19,24 +17,24 @@ class DevLifeApiTest {
     @Test
     fun buildHotGifUrl() {
         assertEquals(
-            apiRouter.buildGifUrl(GifCategory.HOT, TestConstants.page),
-            TestConstants.devLifeHotUrl
+            apiRouter.buildGifUrl(GifCategory.HOT, TestApiConstants.page),
+            TestApiConstants.devLifeHotUrl
         )
     }
 
     @Test
     fun buildLatestGifUrl() {
         assertEquals(
-            apiRouter.buildGifUrl(GifCategory.LATEST, TestConstants.page),
-            TestConstants.devLifeLatestUrl
+            apiRouter.buildGifUrl(GifCategory.LATEST, TestApiConstants.page),
+            TestApiConstants.devLifeLatestUrl
         )
     }
 
     @Test
     fun buildTopGifUrl() {
         assertEquals(
-            apiRouter.buildGifUrl(GifCategory.TOP, TestConstants.page),
-            TestConstants.devLifeTopUrl
+            apiRouter.buildGifUrl(GifCategory.TOP, TestApiConstants.page),
+            TestApiConstants.devLifeTopUrl
         )
     }
 
@@ -44,7 +42,7 @@ class DevLifeApiTest {
     fun buildRandomGifUrl() {
         assertEquals(
             apiRouter.buildRandomGifUrl(),
-            TestConstants.devLifeRandomUrl
+            TestApiConstants.devLifeRandomUrl
         )
     }
 
