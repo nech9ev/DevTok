@@ -84,12 +84,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupTabs() {
+        binding.tabLayoutCategory.getTabAt(1)!!.select()
         binding.tabLayoutCategory.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 when(tab!!.position){
-                    0 -> changeCategory(GifCategory.LATEST)
-                    1 -> changeCategory(GifCategory.HOT)
+                    0 -> changeCategory(GifCategory.HOT)
+                    1 -> changeCategory(GifCategory.LATEST)
                     2 -> changeCategory(GifCategory.TOP)
                 }
             }
