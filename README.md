@@ -1,5 +1,5 @@
 
-[![Android CI](https://github.com/nech9ev/Calculator/actions/workflows/android.yml/badge.svg?branch=nechaev_remake)](https://github.com/nech9ev/Calculator/actions/workflows/android.yml)
+[![Android CI](https://github.com/nech9ev/nech9ev/actions/workflows/android.yml/badge.svg)](https://github.com/nech9ev/nech9ev/actions/workflows/android.yml)
 # [Тестовое задание в Тинькофф Финтех](https://github.com/nech9ev/nech9ev)
 
 ## Скриншоты
