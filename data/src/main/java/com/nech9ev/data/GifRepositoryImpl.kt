@@ -2,20 +2,21 @@ package com.nech9ev.data
 
 import com.nech9ev.core.GifCategory
 import com.nech9ev.data.cache.GifCache
-import com.nech9ev.data.datasource.GifDataSourceImpl
+import com.nech9ev.data.datasource.GifDataSource
 import com.nech9ev.domain.GifRepository
 import com.nech9ev.domain.model.Gif
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlin.random.Random
 
 @Singleton
 class GifRepositoryImpl @Inject constructor(
-    private val dataSourceImpl: GifDataSourceImpl
+    private val dataSourceImpl: GifDataSource
 ): GifRepository {
 
-    private var hotGifCache: GifCache = GifCache()
-    private var topGifCache: GifCache = GifCache()
-    private var latestGifCache: GifCache = GifCache()
+    private var hotGifCache: GifCache = GifCache(Random.nextInt(0, 1000))
+    private var topGifCache: GifCache = GifCache(Random.nextInt(0, 1000))
+    private var latestGifCache: GifCache = GifCache(Random.nextInt(0, 1000))
 
     override suspend fun getNext(category: GifCategory): Gif {
         val cache = getCache(category)
